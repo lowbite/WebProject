@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Servlets</display-name>
+  <welcome-file-list>
+    <welcome-file>loginIn.html</welcome-file>
+    <welcome-file>loginIn.htm</welcome-file>
+    <welcome-file>loginIn.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>check</display-name>
+    <servlet-name>check</servlet-name>
+    <servlet-class>vote.check</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>confirm</display-name>
+    <servlet-name>confirm</servlet-name>
+    <servlet-class>vote.confirm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>confirm</servlet-name>
+    <url-pattern>/confirm</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>statistic</display-name>
+    <servlet-name>statistic</servlet-name>
+    <servlet-class>vote.statistic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>statistic</servlet-name>
+    <url-pattern>/statistic</url-pattern>
+  </servlet-mapping>
+</web-app>
